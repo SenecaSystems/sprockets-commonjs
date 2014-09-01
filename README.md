@@ -5,7 +5,7 @@ This library adds CommonJS support to [Sprockets](https://github.com/sstephenson
 Also this includes the changes from wazeHQ/sprockets-commonjs to allow you transparent requires without the `.module`-part in filename.
 
   # in Gemfile
-  gem 'sprockets-commonjs-mindreframer'
+  gem 'sprockets-commonjs-mindreframer', '~> 0.1', require: 'sprockets-commonjs'
 
   # install
   $ bundle install
@@ -42,7 +42,7 @@ One caveat to the approach this library takes, is that dependencies loaded throu
 
 ## Usage
 
-1. Add `gem 'sprockets-commonjs-mindreframer'` to your `Gemfile`
+1. Add `gem 'sprockets-commonjs-mindreframer', '~> 0.1', require: 'sprockets-commonjs'` to your `Gemfile`
 2. Configure Sprockets::CommonJS.module_paths, e.g.:
     `Sprockets::CommonJS.module_paths += [Rails.root.to_s]`
 
