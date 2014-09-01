@@ -62,16 +62,3 @@
 
   return this.require;
 }).call(this);
-this.require.define({"modules/program.cjs":function(exports, require, module){module.exports = function(){
-  alert('Long live the Programs!');
-};
-;}});
-this.require.define({"modules/user.module":function(exports, require, module){var Program = require('modules/program');
-
-module.exports = function(){
-  alert('Long live the Users');
-  Program();
-};
-;}});
-
-var self = 'application.js';

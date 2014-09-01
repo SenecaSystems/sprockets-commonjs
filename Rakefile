@@ -5,8 +5,10 @@ require 'rake/testtask'
 require 'appraisal'
 
 task :example do
-  env = Sprockets::Environment.new(File.expand_path('..', __FILE__))
+  example_dir = File.expand_path('..', __FILE__)
+  env         = Sprockets::Environment.new(example_dir)
   env.append_path 'examples/'
+  Sprockets::CommonJS.module_paths += [File.join(example_dir, 'examples') ]
 
   target = File.expand_path('../examples/example.js', __FILE__)
   env['application.js'].write_to target

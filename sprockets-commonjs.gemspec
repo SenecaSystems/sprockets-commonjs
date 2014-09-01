@@ -2,8 +2,8 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
-  s.name        = "sprockets-commonjs"
-  s.version     = '0.0.5'
+  s.name        = "sprockets-commonjs-mindreframer"
+  s.version     = '0.1.0'
   s.authors     = ["Alex MacCaw"]
   s.email       = ["info@eribium.org"]
   s.homepage    = ""
@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
 
   # specify any dependencies here; for example:
   # s.add_development_dependency "rspec"
-  s.add_runtime_dependency "sprockets",     "~> 2.1"
-  s.add_development_dependency 'appraisal', '~> 0.5.1'
+  s.add_runtime_dependency "sprockets", "~>2.10.1"
+  s.add_development_dependency "rake"
+  s.add_development_dependency "appraisal"
 end
