@@ -4,11 +4,11 @@ This library adds CommonJS support to [Sprockets](https://github.com/sstephenson
 
 Also this includes the changes from wazeHQ/sprockets-commonjs to allow you transparent requires without the `.module`-part in filename.
 
-  # in Gemfile
-  gem 'sprockets-commonjs-mindreframer', '~> 0.1', require: 'sprockets-commonjs'
+    # in Gemfile
+    gem 'sprockets-commonjs-mindreframer', '~> 0.1', require: 'sprockets-commonjs'
 
-  # install
-  $ bundle install
+    # install
+    $ bundle install
 
 
 ## What is CommonJS?
