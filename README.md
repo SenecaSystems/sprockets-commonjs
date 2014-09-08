@@ -44,7 +44,9 @@ One caveat to the approach this library takes, is that dependencies loaded throu
 
 1. Add `gem 'sprockets-commonjs-mindreframer', '~> 0.1', require: 'sprockets-commonjs'` to your `Gemfile`
 2. Configure Sprockets::CommonJS.module_paths, e.g.:
-    `Sprockets::CommonJS.module_paths += [Rails.root.to_s]`
+    `Sprockets::CommonJS.module_paths += [
+      Rails.root.join('app').to_s, Rails.root.join('gems').to_s
+    ]`
 
 3. Require all the modules, e.g.: `//= require_tree ./models`
 4. Or, require individual modules, e.g.: `//= require users`
