@@ -2,7 +2,7 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
-  s.name        = "sprockets-commonjs-mindreframer"
+  s.name        = "sprockets-commonjs"
   s.version     = '0.1.0'
   s.authors     = ["Alex MacCaw"]
   s.email       = ["info@eribium.org"]
